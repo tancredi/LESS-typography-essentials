@@ -1,0 +1,75 @@
+// ----------------------------------------------------------------------------
+// variables > type
+// ----------------------------------------------------------------------------
+
+@type-root: 62.5%;
+@type-size-large: 16;
+@type-size-body: 14;
+@type-size-small: 13;
+@type-size-h1: 26;
+@type-size-h2: 22;
+@type-size-h3: 20;
+@type-size-h4: 18;
+@type-size-h5: 16;
+@type-size-h6: 14;
+@type-face-heading: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+@type-face-body: Helvetica, Arial, sans-serif;
+@type-face-serif: Georgia, Times, "Times New Roman", serif;
+@type-face-mono: Monaco, Consolas, "Lucida Console", monospace;
+@type-face-components: @type-face-heading;
+@type-size-components: 14;
+@type-face-inputs: @type-face-components;
+@type-size-inputs: 17;
+@type-color-inputs: @color-type-grey;
+
+// ----------------------------------------------------------------------------
+// variables > colors > general
+// ----------------------------------------------------------------------------
+
+@color-background: #ececec;
+@color-page-background: #fefefe;
+@color-highlight: #d93807;
+@color-default-ruler: #b0b0b0;
+
+// ----------------------------------------------------------------------------
+// variables > colors > type
+// ----------------------------------------------------------------------------
+
+@color-type-grey-light: #bfbfbf;
+@color-type-grey: #555;
+@color-type-grey-dark: #333;
+@color-type-body: @color-type-grey;
+@color-type-heading: @color-type-grey-dark;
+@color-type-link: @color-type-highlight;
+@color-type-highlight: @color-highlight;
+@color-type-link-hover: lighten(@color-type-link, 20%);
+@color-type-error: #ef4437;
+@color-type-success: #83a355;
+@color-type-error: #d25534;
+
+// ----------------------------------------------------------------------------
+// variables > layout
+// ----------------------------------------------------------------------------
+
+@unit: 10px;
+@half-unit: @unit / 2;
+@dub-unit: @unit * 2;
+@tri-unit: @unit * 3;
+@quad-unit: @unit * 4;
+@max-page-width: @unit * 90;
+
+// ----------------------------------------------------------------------------
+// variables > decorators
+// ----------------------------------------------------------------------------
+
+@base-radius: @half-unit;
+@default-ruler-border: 1px dotted @color-default-ruler;
+
+// ----------------------------------------------------------------------------
+// imports > core
+// ----------------------------------------------------------------------------
+
+@import 'typography';
+@import 'layout';
+
+// ----------------------------------------------------------------------------
